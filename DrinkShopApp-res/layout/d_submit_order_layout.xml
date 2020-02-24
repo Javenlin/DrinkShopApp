@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--Comment-->
+    <EditText
+        android:id="@+id/edt_comment"
+        android:hint="您的附註"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<!--User Address-->
+    <RadioButton
+        android:id="@+id/rdi_user_address"
+        android:text="原住址"
+        android:checked="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+<!--Other Address-->
+    <RadioButton
+        android:id="@+id/rdi_other_address"
+        android:text="其他住址"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    </RadioGroup>
+<!--Other Address-->
+    <EditText
+        android:id="@+id/edt_other_address"
+        android:hint="使用指定的其他住址"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

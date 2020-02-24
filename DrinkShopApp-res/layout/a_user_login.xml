@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/summer_drinks">
+
+    <ImageView
+        android:id="@+id/Img_myFace"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!--FB原生按鈕-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_FBlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="LOGIN"
+        android:visibility="gone" />
+
+    <!--FB客製按鈕-->
+    <ImageView
+        android:id="@+id/btn_FBlogin_skin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/com_facebook_favicon_blue"
+        android:onClick="LOGIN"
+        android:tooltipText="臉書登入"
+        android:visibility="gone"/>
+
+    <!--android:layout_above="@+id/btn_FBlogin_skin"-->
+    <ImageView
+        android:id="@+id/btn_Phonelogin"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/get_in"
+        android:onClick="LOGIN"
+        android:tooltipText="手機登入" />
+
+</RelativeLayout>

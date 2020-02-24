@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dog_rainbow"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.osiog.myoldmancare.DrinkActivity">
+
+    <FrameLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        
+        <ImageView
+            android:src="@drawable/banner_drink"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+<LinearLayout
+    android:layout_width="210dp"
+    android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Original Tea"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+</LinearLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_drinks"
+        android:scrollbars="vertical"
+        android:scrollbarTrackVertical="@color/whitesmoke"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarSize="8dp"
+        android:scrollbarFadeDuration="0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/whitesmoke">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+    
+</LinearLayout>

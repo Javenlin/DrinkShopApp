@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbluechinese_v2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.osiog.myoldmancare.HomeActivity"
+    tools:showIn="@layout/b_app_bar_home">
+
+    <!--橫幅廣告-->
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+    <!--android:layout_height="200dp"-->
+
+    <!--OUR POPULAR PRODUCTS-->
+    <TextView
+        android:text="熱門暢銷飲品"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@color/com_facebook_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lst_menu"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
